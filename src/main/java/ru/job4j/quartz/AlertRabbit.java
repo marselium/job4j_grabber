@@ -13,8 +13,7 @@ import static org.quartz.SimpleScheduleBuilder.*;
 
 public class AlertRabbit {
 
-
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws Exception {
         try {
             int interval = Integer.parseInt(getInterval().getProperty("rabbit.interval"));
             Scheduler scheduler = StdSchedulerFactory.getDefaultScheduler();
