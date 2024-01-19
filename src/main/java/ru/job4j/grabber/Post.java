@@ -19,7 +19,7 @@ public class Post {
             return false;
         }
         Post post = (Post) o;
-        return id == post.id && Objects.equals(link, post.link) && Objects.equals(description, post.description);
+        return id == post.id && Objects.equals(link, post.link);
     }
 
     @Override
